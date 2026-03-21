@@ -1,0 +1,118 @@
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 3.5rem 1rem 2rem;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.heroSubtitle {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--muted);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.categoryBtn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink-light);
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.categoryBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.categoryBtn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.searchInfo {
+  font-size: 0.875rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.searchInfo em {
+  font-style: normal;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.clearSearch {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.empty {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: var(--muted);
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 2rem 0.5rem 1.5rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
