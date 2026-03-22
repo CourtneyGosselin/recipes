@@ -5,6 +5,7 @@ category: Mains
 time: 30 minutes
 servings: 2 people
 tags: [pork, fried, asian, dinner, lunch]
+image: /images/friedPorkchop.jpg
 ---
 
 ## Ingredients

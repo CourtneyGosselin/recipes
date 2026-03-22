@@ -5,6 +5,7 @@ category: Mains
 time: 30 minutes
 servings: 4 people
 tags: [beef, broccoli, stir fry, asian, dinner]
+image: /images/beefBrocUdon.jpg
 ---
 
 ## Ingredients

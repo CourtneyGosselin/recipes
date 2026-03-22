@@ -5,6 +5,7 @@ category: Mains
 time: 30 minutes
 servings: 2 people
 tags: [salmon, fish, sweet potato, air fryer, teriyaki, dinner]
+image: /images/SalmonAndSweetPotato.jpg
 ---
 
 ## Ingredients
