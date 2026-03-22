@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 
-const rawFiles = import.meta.glob('../recipes/*.md', { as: 'raw', eager: true })
+const rawFiles = import.meta.glob('../recipes/*.md', { query: '?raw', import: 'default', eager: true })
 
 function parseFrontmatter(raw) {
   const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/)
